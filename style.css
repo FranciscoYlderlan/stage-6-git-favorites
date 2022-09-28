@@ -81,6 +81,9 @@ header input {
     border: none;
     border-radius: 5px 0 0 5px;
     padding: 1.6rem;
+}
+
+header input:focus {
     outline: white solid;
     outline-offset: -3px;
 }
