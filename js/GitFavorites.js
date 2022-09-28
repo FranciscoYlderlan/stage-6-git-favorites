@@ -100,7 +100,7 @@ export class GitFavoritesView extends GitFavorites {
         
         tr.innerHTML = text;
 
-        tr.querySelector('a').src = `https://github.com/${user.login}`;
+        tr.querySelector('a').href = `https://github.com/${user.login}`;
         tr.querySelector('img').src = `https://github.com/${user.login}.png`;
         tr.querySelector('img').alt = `Imagem de ${user.name}`;
         tr.querySelector('.name').textContent = user.name;
