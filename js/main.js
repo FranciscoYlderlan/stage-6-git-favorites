@@ -1,24 +1,4 @@
 import { GitFavoritesView, GithubUsers } from "./GitFavorites.js";
 import { router } from "./router.js";
-new GitFavoritesView("#app");
 
-`<td>
-    <a href="https://github.com/${user.login}" target="_blank" rel="noopener">
-        <img src="https://github.com/${user.login}.png" alt="Imagem de ${user.name}"/>
-        <div class="identify">
-            <span class="name">${user.name}</span>
-            <span class="username">/${user.login}</span>
-        </div>
-    </a>
-</td>
-<td class="repositories">
-    ${user.public_repos}
-</td>
-<td class="followers">
-    ${user.followers}
-</td>
-<td>
-    <button>
-        <span class="desc">Remover</span><span class="icon"><i class="fa fa-trash" aria-hidden="true"></i></span>
-    </button>
-</td>`
+new GitFavoritesView("#app");
