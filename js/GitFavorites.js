@@ -61,6 +61,8 @@ export class GitFavoritesView extends GitFavorites {
         
         this.btnSearch = document.querySelector(".search button");
         this.btnSearch.onclick = () => this.onAdd();
+        
+        window.document.onkeyup = event => event.key === "Enter"? this.onAdd(): null;
 
         this.update().then(this.save());
     } 
