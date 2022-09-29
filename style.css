@@ -241,7 +241,9 @@ table th:nth-child(3),table td:nth-child(3), table button span.desc{
     display: none;
 }
 
-
+table td:nth-child(1) {
+    padding: 1.6rem 0 1.6rem 1.5rem;
+}
 
 tbody tr{
     background-color: var(--bg-secundary-tbody);
